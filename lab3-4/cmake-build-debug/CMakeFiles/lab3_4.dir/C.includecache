@@ -9,10 +9,10 @@
 /home/denis/Documents/Work/OOP/lab3-4/controller.c
 malloc.h
 -
-tkPort.h
--
 controller.h
 /home/denis/Documents/Work/OOP/lab3-4/controller.h
+string.h
+-
 
 /home/denis/Documents/Work/OOP/lab3-4/controller.h
 repostiroy.h
@@ -55,7 +55,9 @@ ui.h
 /home/denis/Documents/Work/OOP/lab3-4/ui.h
 stdio.h
 -
-tkPort.h
+string.h
+-
+stdlib.h
 -
 
 /home/denis/Documents/Work/OOP/lab3-4/ui.h

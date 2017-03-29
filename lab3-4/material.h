@@ -12,16 +12,12 @@ typedef struct {
     char *expirationDate;
     int quantity;
 } Product;
-
 // Constructor
 Product* createProduct(char* name, char* supplier, char* expirationDate, int quantity);
-
 // Destructor
 void deleteProduct(Product *p);
-
 // Update
 void updateProduct(Product *p, Product *new_P);
-
 void testProduct();
 
 #endif //LAB3_4_MATERIAL_H

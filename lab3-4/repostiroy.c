@@ -17,9 +17,14 @@ Repository* createRepository()
 
     repo->capacity = 8;
     repo->length = 0;
-    repo->array = malloc(sizeof(Element *) * repo->capacity);
+    repo->array = malloc(sizeof(Product *) * repo->capacity);
 
     return repo;
+}
+
+void updateProductFromRepository(Repository *repository, Product *product, int position)
+{
+    updateProduct(repository->array[position], product);
 }
 
 /*
@@ -58,7 +63,7 @@ int saveProductToRepository(Repository *repo, Product *product)
  *      Repository* repo - the repository used.
  *      int productPosition - the position on which we will delete it.
  * Output:
- *      -2 - if we can't delete, because the length is -2
+ *      -2 - if we can't delete, because the length is 0
  *      -1 - if the position is invalid (the position is out of the length
  *      1 - if the delete function was successfully
  */
@@ -78,7 +83,7 @@ int deleteProductFromRepository(Repository *repo, int productPosition)
     if (repo->length < (repo->capacity / 4))
     {
         repo->capacity = repo->capacity / 2;
-        repo->array = realloc(repo->array, sizeof(Element) * repo->capacity);
+        repo->array = realloc(repo->array, sizeof(Product) * repo->capacity);
     }
     return 1;
 }
@@ -118,3 +123,4 @@ void testRepo()
     assert(repo->capacity == 4);
     deleteRepository(repo);
 }
+

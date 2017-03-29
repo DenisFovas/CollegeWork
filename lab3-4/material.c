@@ -56,18 +56,24 @@ void deleteProduct(Product *p)
  *                   update the data
  *      Product* new_P - the new data for the product stored as a product
  */
-void updateProduct(Product *p, Product *new_P)
-{
-    p->name = realloc(p->name, sizeof(char) * strlen(new_P->name));
-    p->supplier = realloc(p->supplier, sizeof(char) * strlen(new_P->supplier));
-    p->expirationDate = realloc(p->expirationDate, sizeof(char) * strlen(new_P->expirationDate));
-
+void updateProduct(Product *p, Product *new_P) {
+    // will resize the proprieties to can get the new values
+    strcpy(p->name, "");
+    free(p->name);
+    p->name = malloc(sizeof(char) * strlen(new_P->name));
+    strcpy(p->supplier, "");
+    free(p->supplier);
+    p->supplier = malloc(sizeof(char) * strlen(new_P->supplier));
+    strcpy(p->expirationDate, "");
+    free(p->expirationDate);
+    p->expirationDate = malloc(sizeof(char) * strlen(new_P->expirationDate));
+    // Will copy the specifications of the new product to the Product p
     strcpy(p->name, new_P->name);
     strcpy(p->supplier, new_P->supplier);
     strcpy(p->expirationDate, new_P->expirationDate);
     p->quantity = new_P->quantity;
+    deleteProduct(new_P);
 }
-
 
 void testProduct()
 {
@@ -78,11 +84,11 @@ void testProduct()
     assert(strcmp(p->expirationDate, "22") == 0);
     assert(p->quantity == 10);
 
-    Product *new_p = createProduct("Nume", "sup", "12", 100);
+    Product *new_p = createProduct("a", "sup", "12", 100);
 
     updateProduct(p, new_p);
 
-    assert(strcmp(p->name, "Nume") == 0);
+    assert(strcmp(p->name, "a") == 0);
     assert(strcmp(p->supplier, "sup") == 0);
     assert(strcmp(p->expirationDate, "12") == 0);
     assert(p->quantity == 100);

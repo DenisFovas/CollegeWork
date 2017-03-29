@@ -11,9 +11,7 @@ typedef struct {
     Controller *controller;
     int isRunning;
 } Ui;
-
 Ui* createUi(Controller *controller);
-
 void run(Ui* ui);
 
 #endif //LAB3_4_UI_H

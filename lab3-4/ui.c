@@ -139,7 +139,7 @@ int listMaterialsBasedOnExpirationDateUi(Ui* ui)
 	printf("Please insert the expiration date below. If you insert space, we will consider the today date.\n\t");
     printf("Please insert the expiration date: ");
 	/* fgets(date, sizeof(date), stdin); */
-	scanf("%s\n", date);
+	date = gets_s(date, 11);
 
     while (position < (ui->controller->repository->length - 1) && (strcmp(p->name, "null") != 0 &&
             strcmp(p->supplier, "null") != 0)) {

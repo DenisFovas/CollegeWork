@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/denis/Documents/Work/OOP/lab5-6/DynamicArray.cpp
+DynamicArray.h
+/home/denis/Documents/Work/OOP/lab5-6/DynamicArray.h
+
+/home/denis/Documents/Work/OOP/lab5-6/DynamicArray.h
+
+/home/denis/Documents/Work/OOP/lab5-6/dog.cpp
+dog.h
+/home/denis/Documents/Work/OOP/lab5-6/dog.h
+iostream
+-
+
+/home/denis/Documents/Work/OOP/lab5-6/dog.h
+string
+-
+
+/home/denis/Documents/Work/OOP/lab5-6/main.cpp
+iostream
+-
+dog.h
+/home/denis/Documents/Work/OOP/lab5-6/dog.h
+

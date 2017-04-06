@@ -27,3 +27,11 @@ void Dog::openPhoto() {
     std::string url = "firefox " + this->photo;
     system(url.c_str());
 }
+
+bool Dog::operator==( Dog other) {
+	if (this->name == other.getName()) 
+		if (this->breed == other.getBreed())
+			if (this->age == other.getAge())
+				return true;
+	return false;
+}

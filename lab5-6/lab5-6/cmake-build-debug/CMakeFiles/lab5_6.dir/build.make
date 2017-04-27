@@ -129,11 +129,186 @@ CMakeFiles/lab5_6.dir/dog.cpp.o.provides: CMakeFiles/lab5_6.dir/dog.cpp.o.requir
 CMakeFiles/lab5_6.dir/dog.cpp.o.provides.build: CMakeFiles/lab5_6.dir/dog.cpp.o
 
 
+CMakeFiles/lab5_6.dir/DogController.cpp.o: CMakeFiles/lab5_6.dir/flags.make
+CMakeFiles/lab5_6.dir/DogController.cpp.o: ../DogController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab5_6.dir/DogController.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_6.dir/DogController.cpp.o -c /home/denis/Documents/Work/OOP/lab5-6/DogController.cpp
+
+CMakeFiles/lab5_6.dir/DogController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_6.dir/DogController.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/Documents/Work/OOP/lab5-6/DogController.cpp > CMakeFiles/lab5_6.dir/DogController.cpp.i
+
+CMakeFiles/lab5_6.dir/DogController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_6.dir/DogController.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/Documents/Work/OOP/lab5-6/DogController.cpp -o CMakeFiles/lab5_6.dir/DogController.cpp.s
+
+CMakeFiles/lab5_6.dir/DogController.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab5_6.dir/DogController.cpp.o.requires
+
+CMakeFiles/lab5_6.dir/DogController.cpp.o.provides: CMakeFiles/lab5_6.dir/DogController.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/DogController.cpp.o.provides.build
+.PHONY : CMakeFiles/lab5_6.dir/DogController.cpp.o.provides
+
+CMakeFiles/lab5_6.dir/DogController.cpp.o.provides.build: CMakeFiles/lab5_6.dir/DogController.cpp.o
+
+
+CMakeFiles/lab5_6.dir/tests.cpp.o: CMakeFiles/lab5_6.dir/flags.make
+CMakeFiles/lab5_6.dir/tests.cpp.o: ../tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab5_6.dir/tests.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_6.dir/tests.cpp.o -c /home/denis/Documents/Work/OOP/lab5-6/tests.cpp
+
+CMakeFiles/lab5_6.dir/tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_6.dir/tests.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/Documents/Work/OOP/lab5-6/tests.cpp > CMakeFiles/lab5_6.dir/tests.cpp.i
+
+CMakeFiles/lab5_6.dir/tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_6.dir/tests.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/Documents/Work/OOP/lab5-6/tests.cpp -o CMakeFiles/lab5_6.dir/tests.cpp.s
+
+CMakeFiles/lab5_6.dir/tests.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab5_6.dir/tests.cpp.o.requires
+
+CMakeFiles/lab5_6.dir/tests.cpp.o.provides: CMakeFiles/lab5_6.dir/tests.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/tests.cpp.o.provides.build
+.PHONY : CMakeFiles/lab5_6.dir/tests.cpp.o.provides
+
+CMakeFiles/lab5_6.dir/tests.cpp.o.provides.build: CMakeFiles/lab5_6.dir/tests.cpp.o
+
+
+CMakeFiles/lab5_6.dir/Controller.cpp.o: CMakeFiles/lab5_6.dir/flags.make
+CMakeFiles/lab5_6.dir/Controller.cpp.o: ../Controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lab5_6.dir/Controller.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_6.dir/Controller.cpp.o -c /home/denis/Documents/Work/OOP/lab5-6/Controller.cpp
+
+CMakeFiles/lab5_6.dir/Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_6.dir/Controller.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/Documents/Work/OOP/lab5-6/Controller.cpp > CMakeFiles/lab5_6.dir/Controller.cpp.i
+
+CMakeFiles/lab5_6.dir/Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_6.dir/Controller.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/Documents/Work/OOP/lab5-6/Controller.cpp -o CMakeFiles/lab5_6.dir/Controller.cpp.s
+
+CMakeFiles/lab5_6.dir/Controller.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab5_6.dir/Controller.cpp.o.requires
+
+CMakeFiles/lab5_6.dir/Controller.cpp.o.provides: CMakeFiles/lab5_6.dir/Controller.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/Controller.cpp.o.provides.build
+.PHONY : CMakeFiles/lab5_6.dir/Controller.cpp.o.provides
+
+CMakeFiles/lab5_6.dir/Controller.cpp.o.provides.build: CMakeFiles/lab5_6.dir/Controller.cpp.o
+
+
+CMakeFiles/lab5_6.dir/UiAdmin.cpp.o: CMakeFiles/lab5_6.dir/flags.make
+CMakeFiles/lab5_6.dir/UiAdmin.cpp.o: ../UiAdmin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lab5_6.dir/UiAdmin.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_6.dir/UiAdmin.cpp.o -c /home/denis/Documents/Work/OOP/lab5-6/UiAdmin.cpp
+
+CMakeFiles/lab5_6.dir/UiAdmin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_6.dir/UiAdmin.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/Documents/Work/OOP/lab5-6/UiAdmin.cpp > CMakeFiles/lab5_6.dir/UiAdmin.cpp.i
+
+CMakeFiles/lab5_6.dir/UiAdmin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_6.dir/UiAdmin.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/Documents/Work/OOP/lab5-6/UiAdmin.cpp -o CMakeFiles/lab5_6.dir/UiAdmin.cpp.s
+
+CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.requires
+
+CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.provides: CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.provides.build
+.PHONY : CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.provides
+
+CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.provides.build: CMakeFiles/lab5_6.dir/UiAdmin.cpp.o
+
+
+CMakeFiles/lab5_6.dir/MainUi.cpp.o: CMakeFiles/lab5_6.dir/flags.make
+CMakeFiles/lab5_6.dir/MainUi.cpp.o: ../MainUi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lab5_6.dir/MainUi.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_6.dir/MainUi.cpp.o -c /home/denis/Documents/Work/OOP/lab5-6/MainUi.cpp
+
+CMakeFiles/lab5_6.dir/MainUi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_6.dir/MainUi.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/Documents/Work/OOP/lab5-6/MainUi.cpp > CMakeFiles/lab5_6.dir/MainUi.cpp.i
+
+CMakeFiles/lab5_6.dir/MainUi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_6.dir/MainUi.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/Documents/Work/OOP/lab5-6/MainUi.cpp -o CMakeFiles/lab5_6.dir/MainUi.cpp.s
+
+CMakeFiles/lab5_6.dir/MainUi.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab5_6.dir/MainUi.cpp.o.requires
+
+CMakeFiles/lab5_6.dir/MainUi.cpp.o.provides: CMakeFiles/lab5_6.dir/MainUi.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/MainUi.cpp.o.provides.build
+.PHONY : CMakeFiles/lab5_6.dir/MainUi.cpp.o.provides
+
+CMakeFiles/lab5_6.dir/MainUi.cpp.o.provides.build: CMakeFiles/lab5_6.dir/MainUi.cpp.o
+
+
+CMakeFiles/lab5_6.dir/UserUi.cpp.o: CMakeFiles/lab5_6.dir/flags.make
+CMakeFiles/lab5_6.dir/UserUi.cpp.o: ../UserUi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lab5_6.dir/UserUi.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_6.dir/UserUi.cpp.o -c /home/denis/Documents/Work/OOP/lab5-6/UserUi.cpp
+
+CMakeFiles/lab5_6.dir/UserUi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_6.dir/UserUi.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/Documents/Work/OOP/lab5-6/UserUi.cpp > CMakeFiles/lab5_6.dir/UserUi.cpp.i
+
+CMakeFiles/lab5_6.dir/UserUi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_6.dir/UserUi.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/Documents/Work/OOP/lab5-6/UserUi.cpp -o CMakeFiles/lab5_6.dir/UserUi.cpp.s
+
+CMakeFiles/lab5_6.dir/UserUi.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab5_6.dir/UserUi.cpp.o.requires
+
+CMakeFiles/lab5_6.dir/UserUi.cpp.o.provides: CMakeFiles/lab5_6.dir/UserUi.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserUi.cpp.o.provides.build
+.PHONY : CMakeFiles/lab5_6.dir/UserUi.cpp.o.provides
+
+CMakeFiles/lab5_6.dir/UserUi.cpp.o.provides.build: CMakeFiles/lab5_6.dir/UserUi.cpp.o
+
+
+CMakeFiles/lab5_6.dir/UserController.cpp.o: CMakeFiles/lab5_6.dir/flags.make
+CMakeFiles/lab5_6.dir/UserController.cpp.o: ../UserController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lab5_6.dir/UserController.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_6.dir/UserController.cpp.o -c /home/denis/Documents/Work/OOP/lab5-6/UserController.cpp
+
+CMakeFiles/lab5_6.dir/UserController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_6.dir/UserController.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/Documents/Work/OOP/lab5-6/UserController.cpp > CMakeFiles/lab5_6.dir/UserController.cpp.i
+
+CMakeFiles/lab5_6.dir/UserController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_6.dir/UserController.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/Documents/Work/OOP/lab5-6/UserController.cpp -o CMakeFiles/lab5_6.dir/UserController.cpp.s
+
+CMakeFiles/lab5_6.dir/UserController.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab5_6.dir/UserController.cpp.o.requires
+
+CMakeFiles/lab5_6.dir/UserController.cpp.o.provides: CMakeFiles/lab5_6.dir/UserController.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserController.cpp.o.provides.build
+.PHONY : CMakeFiles/lab5_6.dir/UserController.cpp.o.provides
+
+CMakeFiles/lab5_6.dir/UserController.cpp.o.provides.build: CMakeFiles/lab5_6.dir/UserController.cpp.o
+
+
 # Object files for target lab5_6
 lab5_6_OBJECTS = \
 "CMakeFiles/lab5_6.dir/main.cpp.o" \
 "CMakeFiles/lab5_6.dir/DynamicArray.cpp.o" \
-"CMakeFiles/lab5_6.dir/dog.cpp.o"
+"CMakeFiles/lab5_6.dir/dog.cpp.o" \
+"CMakeFiles/lab5_6.dir/DogController.cpp.o" \
+"CMakeFiles/lab5_6.dir/tests.cpp.o" \
+"CMakeFiles/lab5_6.dir/Controller.cpp.o" \
+"CMakeFiles/lab5_6.dir/UiAdmin.cpp.o" \
+"CMakeFiles/lab5_6.dir/MainUi.cpp.o" \
+"CMakeFiles/lab5_6.dir/UserUi.cpp.o" \
+"CMakeFiles/lab5_6.dir/UserController.cpp.o"
 
 # External object files for target lab5_6
 lab5_6_EXTERNAL_OBJECTS =
@@ -141,9 +316,16 @@ lab5_6_EXTERNAL_OBJECTS =
 lab5_6: CMakeFiles/lab5_6.dir/main.cpp.o
 lab5_6: CMakeFiles/lab5_6.dir/DynamicArray.cpp.o
 lab5_6: CMakeFiles/lab5_6.dir/dog.cpp.o
+lab5_6: CMakeFiles/lab5_6.dir/DogController.cpp.o
+lab5_6: CMakeFiles/lab5_6.dir/tests.cpp.o
+lab5_6: CMakeFiles/lab5_6.dir/Controller.cpp.o
+lab5_6: CMakeFiles/lab5_6.dir/UiAdmin.cpp.o
+lab5_6: CMakeFiles/lab5_6.dir/MainUi.cpp.o
+lab5_6: CMakeFiles/lab5_6.dir/UserUi.cpp.o
+lab5_6: CMakeFiles/lab5_6.dir/UserController.cpp.o
 lab5_6: CMakeFiles/lab5_6.dir/build.make
 lab5_6: CMakeFiles/lab5_6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lab5_6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/denis/Documents/Work/OOP/lab5-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable lab5_6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab5_6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +336,13 @@ CMakeFiles/lab5_6.dir/build: lab5_6
 CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/main.cpp.o.requires
 CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/DynamicArray.cpp.o.requires
 CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/dog.cpp.o.requires
+CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/DogController.cpp.o.requires
+CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/tests.cpp.o.requires
+CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/Controller.cpp.o.requires
+CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/UiAdmin.cpp.o.requires
+CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/MainUi.cpp.o.requires
+CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/UserUi.cpp.o.requires
+CMakeFiles/lab5_6.dir/requires: CMakeFiles/lab5_6.dir/UserController.cpp.o.requires
 
 .PHONY : CMakeFiles/lab5_6.dir/requires
 

@@ -82,10 +82,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/Controller.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/Controller.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/DogController.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/DogController.h">
+			<Option target="lab5_6"/>
+		</Unit>
 		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/DynamicArray.cpp">
 			<Option target="lab5_6"/>
 		</Unit>
 		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/DynamicArray.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/MainUi.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/MainUi.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UiAdmin.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UiAdmin.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserController.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserController.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserUi.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserUi.h">
 			<Option target="lab5_6"/>
 		</Unit>
 		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/dog.cpp">
@@ -95,6 +131,12 @@
 			<Option target="lab5_6"/>
 		</Unit>
 		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/main.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/tests.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/tests.h">
 			<Option target="lab5_6"/>
 		</Unit>
 		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/CMakeLists.txt">

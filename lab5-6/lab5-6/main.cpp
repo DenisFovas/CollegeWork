@@ -1,8 +1,10 @@
-#include <iostream>
-#include "dog.h"
+#include "tests.h"
+#include "MainUi.h"
 
 int main() {
-    Dog a = Dog("a", "a", "www.google.com", 2);
-    std::cout << "Hello, World!" << std::endl;
+    tests test;
+    test.runTests();
+    UiAdmin ui;
+    ui.run();
     return 0;
 }

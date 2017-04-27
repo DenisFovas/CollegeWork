@@ -2,6 +2,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab5_6.dir/main.cpp.o"
   "CMakeFiles/lab5_6.dir/DynamicArray.cpp.o"
   "CMakeFiles/lab5_6.dir/dog.cpp.o"
+  "CMakeFiles/lab5_6.dir/DogController.cpp.o"
+  "CMakeFiles/lab5_6.dir/tests.cpp.o"
+  "CMakeFiles/lab5_6.dir/Controller.cpp.o"
+  "CMakeFiles/lab5_6.dir/UiAdmin.cpp.o"
+  "CMakeFiles/lab5_6.dir/MainUi.cpp.o"
+  "CMakeFiles/lab5_6.dir/UserUi.cpp.o"
+  "CMakeFiles/lab5_6.dir/UserController.cpp.o"
   "lab5_6.pdb"
   "lab5_6"
 )

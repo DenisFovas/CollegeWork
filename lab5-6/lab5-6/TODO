@@ -1,0 +1,10 @@
+Add user interface.
+	You can try to make it like so:
+	- the main repository is stored in the mainUi variable. 
+	- The user controller has a field of the main repository. this way you can check the dogs?
+	- You can make only 2 Uis. One for admin. One for user. 
+
+
+=====
+Need to make the connections.
+How can i connect to main repo to the user?

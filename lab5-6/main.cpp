@@ -1,14 +1,25 @@
-#include <iostream>
-#include "dog.h"
-#include "DogController.h"
-#include "Repository.h"
-#include "DynamicArray.h"
+#include "tests.h"
+#include "UiAdmin.h"
 
 int main() {
-    Dog a = Dog("a", "a", "www.google.com", 2);
-	DogController *controller = new DogController();
-	DynamicArray <Dog> *array = new DynamicArray();
-	Repository <Dog> repository = new <Dog> Repository(controller)
-    std::cout << "Hello, World!" << std::endl;
+    // Tests
+    tests test;
+    test.runTests();
+
+	// Admin Controller
+    Controller controllerAdmin;
+    // User ui
+    /* Repository <Dog> repo; */
+    UserController controller{ controllerAdmin.getRepository() };
+    UserUi userUi {controller};
+
+    // Admin ui
+    UiAdmin ui{userUi, controllerAdmin};
+
+    // Initialize with test values.
+    ui.getController().init();
+
+    // Run
+    ui.select();
     return 0;
 }

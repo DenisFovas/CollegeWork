@@ -2,7 +2,26 @@ package view;
 
 import controller.Controller;
 import model.*;
-import repository.NoProgramException;
+import model.base.Dictionary;
+import model.base.ExecutionStack;
+import model.base.Heap;
+import model.base.MyList;
+import model.exceptions.DivisionByZeroException;
+import model.exceptions.EmptyStackException;
+import model.exceptions.InvalidAddressException;
+import model.exceptions.KeyNotInsertedException;
+import model.expressions.ArithmeticExpression;
+import model.expressions.ConstantExpression;
+import model.expressions.VariableExpression;
+import model.interfaces.IDictionary;
+import model.interfaces.IHeap;
+import model.interfaces.Statement;
+import model.statement.AssignStatement;
+import model.statement.ComposedStatement;
+import model.statement.NewStatement;
+import model.statement.PrintStatement;
+import repository.exceptions.InterpretorException;
+import repository.exceptions.NoProgramException;
 
 import java.util.Scanner;
 
@@ -82,21 +101,47 @@ public class View {
                         ),
                         new PrintStatement(new ConstantExpression(43))
                 ),
-                new PrintStatement(new VariableExpression("variableV"))
+                new PrintStatement(new VariableExpression("var1"))
         );
-        Statement proba4 = new PrintStatement(new ConstantExpression(10));
-
+        Statement proba4 = new ComposedStatement(
+                new ComposedStatement(
+                        new AssignStatement(
+                                "var1",
+                                new ArithmeticExpression(
+                                        '/', new ConstantExpression(20), new ConstantExpression(4)
+                                )
+                        ),
+                        new PrintStatement(new ConstantExpression(43))
+                ),
+                new PrintStatement(new VariableExpression("var1"))
+        );
+        Statement p5 = new ComposedStatement(
+                new AssignStatement("v",
+                        new ConstantExpression(10)
+                ),
+                new ComposedStatement(
+                        new AssignStatement("var2", new ConstantExpression(20)),
+                        new NewStatement("bar",
+                                new ArithmeticExpression
+                                        ('*',
+                                                new ConstantExpression(34),
+                                                new ConstantExpression(100)
+                                        )
+                        )
+                )
+        );
         System.out.println("Here are the program options: ");
         System.out.println("\t1. " + proba1);
         System.out.println("\t2. " + proba2);
         System.out.println("\t3. " + proba3);
         System.out.println("\t4. " + proba4);
+        System.out.println("\t5. " + p5);
         System.out.println("\t0. Back");
 
     }
 
     private void _inputProgram() {
-        Statement rootProgram = new PrintStatement(new ConstantExpression(0));
+        // Create the programs
         Statement proba1 = new AssignStatement("Variabila", new ConstantExpression(32));
         Statement proba2 = new ComposedStatement(
                 new AssignStatement("firstVariable", new ConstantExpression(2)),
@@ -113,12 +158,43 @@ public class View {
                         ),
                         new PrintStatement(new ConstantExpression(43))
                 ),
-                new PrintStatement(new VariableExpression("variableV"))
+                new PrintStatement(new VariableExpression("var1"))
         );
-        Statement proba4 = new PrintStatement(new ConstantExpression(10));
+        Statement proba4 = new ComposedStatement(
+                new ComposedStatement(
+                        new AssignStatement(
+                                "var1",
+                                new ArithmeticExpression(
+                                        '/', new ConstantExpression(20), new ConstantExpression(4)
+                                )
+                        ),
+                        new PrintStatement(new ConstantExpression(43))
+                ),
+                new PrintStatement(new VariableExpression("var1"))
+        );
+        Statement p5 = new ComposedStatement(
+                new AssignStatement("v",
+                        new ConstantExpression(10)
+                ),
+                new ComposedStatement(
+                        new AssignStatement("var2", new ConstantExpression(20)),
+                        new NewStatement("bar",
+                                new ArithmeticExpression
+                                        ('*',
+                                                new ConstantExpression(34),
+                                                new ConstantExpression(100)
+                                        )
+                        )
+                )
+        );
+
+        // Define the Elements for the program states
         ExecutionStack<Statement> executionStack = new ExecutionStack<>();
         IDictionary<String, Integer> dictionary = new Dictionary<>();
         MyList<Integer> messages = new MyList<>();
+        // Create the program state
+        ProgramState ps = null;
+        IHeap<Integer, Integer> heap = new Heap<>();
 
         while (true) {
             _printInputProgram();
@@ -126,18 +202,27 @@ public class View {
             switch (option) {
                 case 1: {
                     executionStack.push(proba1);
+                    ps = new ProgramState(executionStack, dictionary, messages, proba1, heap);
                     break;
                 }
                 case 2: {
                     executionStack.push(proba2);
+                    ps = new ProgramState(executionStack, dictionary, messages, proba2, heap);
                     break;
                 }
                 case 3: {
                     executionStack.push(proba3);
+                    ps = new ProgramState(executionStack, dictionary, messages, proba3, heap);
                     break;
                 }
                 case 4: {
                     executionStack.push(proba4);
+                    ps = new ProgramState(executionStack, dictionary, messages, proba4, heap);
+                    break;
+                }
+                case 5: {
+                    executionStack.push(p5);
+                    ps = new ProgramState(executionStack, dictionary, messages, p5, heap);
                     break;
                 }
                 case 0: {
@@ -148,7 +233,6 @@ public class View {
                     break;
                 }
             }
-            ProgramState ps = new ProgramState(executionStack, dictionary, messages, rootProgram);
             _controller.get_repository().addProgramState(ps);
         }
     }
@@ -167,8 +251,11 @@ public class View {
             switch (input) {
                 case 1: {
                     try {
+                        String currentState = _controller.getCurrentState().toString();
+//                        System.out.println("Before execution: \n" + _controller.getCurrentState());
                         _controller.executeOneStep();
-                        System.out.println(_controller.getCurrentState());
+//                        System.out.println("After execution: \n" + _controller.getCurrentState());
+                        System.out.println(currentState);
                         System.out.println("\t==>");
                     } catch (DivisionByZeroException | EmptyStackException | NoProgramException | KeyNotInsertedException exception) {
                         System.out.println(exception.getMessage());
@@ -177,10 +264,18 @@ public class View {
                 }
                 case 2: {
                     try {
+                        System.out.println("#############################################");
+                        System.out.println("The state before the execution: ");
+                        System.out.println(_controller.getCurrentState());
                         _controller.executeAll();
+                        System.out.println("The state after the execution: ");
                         System.out.println(_controller.getCurrentState());
                     } catch (DivisionByZeroException | NoProgramException | EmptyStackException | KeyNotInsertedException exception) {
                         System.out.println(exception.getMessage());
+                    } catch (InterpretorException e) {
+                        e.printStackTrace();
+                    } catch (InvalidAddressException e) {
+                        e.printStackTrace();
                     }
                     break;
                 }

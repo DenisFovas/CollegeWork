@@ -6,7 +6,6 @@
 package toyinterpreter;
 
 import controller.Controller;
-import model.*;
 import repository.ProgramStateRepository;
 import view.View;
 
@@ -18,9 +17,9 @@ public class ToyInterpreter {
 
     public static void main(String[] args) {
         // Initialization
-        ExecutionStack<Statement> executionStack = new ExecutionStack<>();
-        Dictionary<String, Integer> dictionary = new Dictionary<>();
-        MyList<Integer> messages = new MyList<>();
+//        ExecutionStack<Statement> executionStack = new ExecutionStack<>();
+//        Dictionary<String, Integer> dictionary = new Dictionary<>();
+//        MyList<Integer> messages = new MyList<>();
 
         // Initiate the Repository
         ProgramStateRepository repository = new ProgramStateRepository();

@@ -13,10 +13,9 @@ private:
     std::string name;
     std::string photo;
     int age;
-	int id;
 
 public:
-    Dog(std::string, std::string, std::string, int, int);
+    Dog(std::string, std::string, std::string, int);
     Dog();
     ~Dog();
 
@@ -28,15 +27,9 @@ public:
     void setName(std::string name) { this->name = name; };
     void setPhoto(std::string photo) { this->photo = photo; };
     void setAge(int age) { this->age = age; };
-	int getID() {return this->id;}
 
     void openPhoto();
 	bool operator==(Dog other);
-    Dog& operator=(Dog other);
-
-	std::string toString();
 
 };
-
-
 #endif //LAB5_6_DOG_H

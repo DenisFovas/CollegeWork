@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/lab5_6.dir/main.cpp.o CMakeFiles/lab5_6.dir/dog.cpp.o CMakeFiles/lab5_6.dir/tests.cpp.o CMakeFiles/lab5_6.dir/Controller.cpp.o CMakeFiles/lab5_6.dir/UiAdmin.cpp.o CMakeFiles/lab5_6.dir/UserUi.cpp.o CMakeFiles/lab5_6.dir/UserController.cpp.o  -o lab5_6 

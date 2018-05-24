@@ -123,113 +123,32 @@ lab5_6/fast:
 	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/build
 .PHONY : lab5_6/fast
 
-Controller.o: Controller.cpp.o
+DynamicArray.o: DynamicArray.cpp.o
 
-.PHONY : Controller.o
-
-# target to build an object file
-Controller.cpp.o:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/Controller.cpp.o
-.PHONY : Controller.cpp.o
-
-Controller.i: Controller.cpp.i
-
-.PHONY : Controller.i
-
-# target to preprocess a source file
-Controller.cpp.i:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/Controller.cpp.i
-.PHONY : Controller.cpp.i
-
-Controller.s: Controller.cpp.s
-
-.PHONY : Controller.s
-
-# target to generate assembly for a file
-Controller.cpp.s:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/Controller.cpp.s
-.PHONY : Controller.cpp.s
-
-UiAdmin.o: UiAdmin.cpp.o
-
-.PHONY : UiAdmin.o
+.PHONY : DynamicArray.o
 
 # target to build an object file
-UiAdmin.cpp.o:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UiAdmin.cpp.o
-.PHONY : UiAdmin.cpp.o
+DynamicArray.cpp.o:
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/DynamicArray.cpp.o
+.PHONY : DynamicArray.cpp.o
 
-UiAdmin.i: UiAdmin.cpp.i
+DynamicArray.i: DynamicArray.cpp.i
 
-.PHONY : UiAdmin.i
-
-# target to preprocess a source file
-UiAdmin.cpp.i:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UiAdmin.cpp.i
-.PHONY : UiAdmin.cpp.i
-
-UiAdmin.s: UiAdmin.cpp.s
-
-.PHONY : UiAdmin.s
-
-# target to generate assembly for a file
-UiAdmin.cpp.s:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UiAdmin.cpp.s
-.PHONY : UiAdmin.cpp.s
-
-UserController.o: UserController.cpp.o
-
-.PHONY : UserController.o
-
-# target to build an object file
-UserController.cpp.o:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserController.cpp.o
-.PHONY : UserController.cpp.o
-
-UserController.i: UserController.cpp.i
-
-.PHONY : UserController.i
+.PHONY : DynamicArray.i
 
 # target to preprocess a source file
-UserController.cpp.i:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserController.cpp.i
-.PHONY : UserController.cpp.i
+DynamicArray.cpp.i:
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/DynamicArray.cpp.i
+.PHONY : DynamicArray.cpp.i
 
-UserController.s: UserController.cpp.s
+DynamicArray.s: DynamicArray.cpp.s
 
-.PHONY : UserController.s
-
-# target to generate assembly for a file
-UserController.cpp.s:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserController.cpp.s
-.PHONY : UserController.cpp.s
-
-UserUi.o: UserUi.cpp.o
-
-.PHONY : UserUi.o
-
-# target to build an object file
-UserUi.cpp.o:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserUi.cpp.o
-.PHONY : UserUi.cpp.o
-
-UserUi.i: UserUi.cpp.i
-
-.PHONY : UserUi.i
-
-# target to preprocess a source file
-UserUi.cpp.i:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserUi.cpp.i
-.PHONY : UserUi.cpp.i
-
-UserUi.s: UserUi.cpp.s
-
-.PHONY : UserUi.s
+.PHONY : DynamicArray.s
 
 # target to generate assembly for a file
-UserUi.cpp.s:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/UserUi.cpp.s
-.PHONY : UserUi.cpp.s
+DynamicArray.cpp.s:
+	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/DynamicArray.cpp.s
+.PHONY : DynamicArray.cpp.s
 
 dog.o: dog.cpp.o
 
@@ -285,33 +204,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tests.o: tests.cpp.o
-
-.PHONY : tests.o
-
-# target to build an object file
-tests.cpp.o:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/tests.cpp.o
-.PHONY : tests.cpp.o
-
-tests.i: tests.cpp.i
-
-.PHONY : tests.i
-
-# target to preprocess a source file
-tests.cpp.i:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/tests.cpp.i
-.PHONY : tests.cpp.i
-
-tests.s: tests.cpp.s
-
-.PHONY : tests.s
-
-# target to generate assembly for a file
-tests.cpp.s:
-	$(MAKE) -f CMakeFiles/lab5_6.dir/build.make CMakeFiles/lab5_6.dir/tests.cpp.s
-.PHONY : tests.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -321,27 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab5_6"
-	@echo "... Controller.o"
-	@echo "... Controller.i"
-	@echo "... Controller.s"
-	@echo "... UiAdmin.o"
-	@echo "... UiAdmin.i"
-	@echo "... UiAdmin.s"
-	@echo "... UserController.o"
-	@echo "... UserController.i"
-	@echo "... UserController.s"
-	@echo "... UserUi.o"
-	@echo "... UserUi.i"
-	@echo "... UserUi.s"
+	@echo "... DynamicArray.o"
+	@echo "... DynamicArray.i"
+	@echo "... DynamicArray.s"
 	@echo "... dog.o"
 	@echo "... dog.i"
 	@echo "... dog.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tests.o"
-	@echo "... tests.i"
-	@echo "... tests.s"
 .PHONY : help
 
 

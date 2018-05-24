@@ -1,2 +1,0 @@
-Options: 
-CMake: 3.7.2@/home/denis/Documents/IDE/clion-2016.3.5/bin/cmake/bin/cmake

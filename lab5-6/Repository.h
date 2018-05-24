@@ -1,50 +1,33 @@
-//
-// Created by denis on 5/5/17.
-//
 
-#ifndef LAB5_6_REPOSITORY_H
-#define LAB5_6_REPOSITORY_H
+/*
+ * File name : 
+ *
+ * Creation Date :
+ *
+ * Last Modified :
+ *
+ * Created By: Fovas Denis
+ */
 
+#ifndef __LAB5_6__REPOSITORY__
+#define __LAB5_6__REPOSITORY__
 
-#include <iostream>
 #include "DynamicArray.h"
+#include "DogController.h"
 
 template <typename T>
 class Repository {
 private:
-    DynamicVector<T> storage;
+	DynamicArray<T> *array;
+	DogController dogController;
 
 public:
-    Repository();
-    ~Repository();
-    void add(T element);
-    void update(T element, int position);
-    void deleteElement(T element);
-    int getSize() { return this->storage.getSize(); }
-    T& getElement(int position) {return this->storage[position];}
+	Repository(DogController);
+	~Repository();
+
+	bool createElement (std::string name, std::string breed, std::string url, int age);
+	bool deleteElement (T element);
+	bool updateElement (T element, int position);
 };
 
-
-template <typename T>
-Repository<T>::Repository() {
-}
-
-template <typename T>
-Repository<T>::~Repository() {
-}
-
-template <typename T>
-void Repository<T>::add(T element) {
-    this->storage.add(element);
-}
-
-template <typename T>
-void Repository<T>::update(T element, int position) {
-    this->storage.update(element, position);
-}
-
-template <typename T>
-void Repository<T>::deleteElement(T element) {
-    this->storage.deleteElement(element);
-}
-#endif //LAB5_6_REPOSITORY_H
+#endif

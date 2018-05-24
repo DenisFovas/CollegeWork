@@ -1,3 +1,0 @@
-/home/denis/Documents/Work/OOP/lab5-6/CMakeFiles/rebuild_cache.dir
-/home/denis/Documents/Work/OOP/lab5-6/CMakeFiles/edit_cache.dir
-/home/denis/Documents/Work/OOP/lab5-6/CMakeFiles/lab5_6.dir

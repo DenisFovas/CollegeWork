@@ -1,0 +1,3 @@
+/home/denis/Documents/git-code/CollegeWork/oop/lab3-4/CMakeFiles/rebuild_cache.dir
+/home/denis/Documents/git-code/CollegeWork/oop/lab3-4/CMakeFiles/lab3_4.dir
+/home/denis/Documents/git-code/CollegeWork/oop/lab3-4/CMakeFiles/edit_cache.dir

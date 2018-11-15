@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab5_6"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/denis/Documents/Work/OOP/lab5-6"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/denis/Documents/Work/OOP/lab5-6"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/denis/Documents/Work/OOP/lab5-6"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab5_6">
+				<Option output="/home/denis/Documents/Work/OOP/lab5-6/lab5_6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/denis/Documents/Work/OOP/lab5-6"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 lab5_6"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab5_6/fast">
+				<Option output="/home/denis/Documents/Work/OOP/lab5-6/lab5_6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/denis/Documents/Work/OOP/lab5-6"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 lab5_6/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/denis/Documents/Work/OOP/lab5-6/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/Controller.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/Controller.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/DynamicArray.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/Repository.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UiAdmin.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UiAdmin.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserController.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserController.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserUi.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/UserUi.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/dog.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/dog.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/main.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/tests.cpp">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/tests.h">
+			<Option target="lab5_6"/>
+		</Unit>
+		<Unit filename="/home/denis/Documents/Work/OOP/lab5-6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

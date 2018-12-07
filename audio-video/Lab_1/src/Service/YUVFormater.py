@@ -28,6 +28,5 @@ class YUVFormater:
                         self.v.m[i + 1][j] + self.v.m[i + 1][j + 1])/4
                 temp_v.m[int(i/2)][int(j/2)] = (self.v.m[i][j] + self.v.m[i][j + 1] + \
                         self.v.m[i + 1][j] + self.v.m[i + 1][j + 1])/4
-        
         self.u, self.v = temp_u, temp_v
  

@@ -15,3 +15,5 @@ if __name__ == "__main__":
     print("Compressing the matrices..." + str(datetime.datetime.now()))
     yuv_format.u_compressed_image = CompressedImageService.CompressedImageService.compress_matrix_by_2(yuv_format.u_compressed_image)
     yuv_format.v_compressed_image = CompressedImageService.CompressedImageService.compress_matrix_by_2(yuv_format.v_compressed_image)
+    yuv_format.u_compressed_image.print()
+    yuv_format.v_compressed_image.print()

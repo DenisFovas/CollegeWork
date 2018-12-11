@@ -10,7 +10,7 @@ class CompressedImage:
     def set_matrice(self, x, y, m):
         self.matrices[x][y] = m
 
-    def print_structure(self):
+    def print(self):
         for i in range(0, self.height):
             for j in range(0, self.width):
-                print(self.matrices)
+                print("The list of matrices here: " + self.matrices[i][j].print(), end=" ")

@@ -1,11 +1,14 @@
 from Service import Matrix
-from Image import YUVPixel
+from Image import YUVPixel, CompressedImage
 
 class YUVFormater:
     def __init__(self, width = 0, height = 0):
         self.y = Matrix.Matrix(width, height)
         self.u = Matrix.Matrix(width, height)
         self.v = Matrix.Matrix(width, height)
+        self.y_compressed = None
+        self.u_compressed = None
+        self.v_compressed = None
 
     # This will 
     def insertPixels(self, image):
@@ -18,15 +21,24 @@ class YUVFormater:
                 self.u.m[i][j] = yuv_pixel.u
                 self.v.m[i][j] = yuv_pixel.v
 
-    def downsapling422(self):
-        temp_u = Matrix.Matrix(int(self.y.width / 2), int(self.y.height /2))
-        temp_v = Matrix.Matrix(int(self.y.width / 2), int(self.y.height /2))
-        for i in range(0, self.y.height, 2):
-            for j in range(0, self.y.width, 2):
-        
-                temp_u.m[int(i/2)][int(j/2)] = (self.u.m[i][j] + self.u.m[i][j + 1] + \
-                        self.v.m[i + 1][j] + self.v.m[i + 1][j + 1])/4
-                temp_v.m[int(i/2)][int(j/2)] = (self.v.m[i][j] + self.v.m[i][j + 1] + \
-                        self.v.m[i + 1][j] + self.v.m[i + 1][j + 1])/4
-        self.u, self.v = temp_u, temp_v
- 
+    def downsapling(self):
+        self.y_compressed = self.downsapling_matrix(self.y)
+        self.u_compressed = self.downsapling_matrix(self.u)
+        self.v_compressed = self.downsapling_matrix(self.v)
+
+    def downsapling_matrix(self, matrix):
+        compressed_image_width = matrix.width / 8
+        compressed_image_height = matrix.height / 8
+        compressed_image = CompressedImage.CompressedImage(compressed_image_width, compressed_image_height)
+        temp = Matrix.Matrix(8, 8)
+        x, y = 0, 0
+        for i in range(0, matrix.height):
+            for j in range(0, matrix.width):
+                temp.m[i % 8][j % 8] = matrix.m[i][j]
+                if x % 8 == 0 and y % 8 == 0:
+                    compressed_image.set_matrice(x, y, temp)
+                    x += 1
+                    y += 1
+        return compressed_image
+
+   

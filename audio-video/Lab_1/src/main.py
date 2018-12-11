@@ -9,5 +9,4 @@ if __name__ == "__main__":
     yuv_format = YUVFormater.YUVFormater(ppm_image.width, ppm_image.height)
     print("Changing the format from RGB to YUV..." + str(datetime.datetime.now()))
     yuv_format.insertPixels(ppm_image.image)
-    yuv_format.downsapling422()
-    print("Done " + str(datetime.datetime.now()))
+    yuv_format.downsapling()

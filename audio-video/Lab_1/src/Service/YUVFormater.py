@@ -1,14 +1,13 @@
-from Service import Matrix
-from Image import YUVPixel, CompressedImage
+from Models import Matrix, YUVPixel, CompressedImage
 
 class YUVFormater:
     def __init__(self, width = 0, height = 0):
         self.y = Matrix.Matrix(width, height)
         self.u = Matrix.Matrix(width, height)
         self.v = Matrix.Matrix(width, height)
-        self.y_compressed = None
-        self.u_compressed = None
-        self.v_compressed = None
+        self.y_compressed_image = []
+        self.u_compressed_image = []
+        self.v_compressed_image = []
 
     # This will 
     def insertPixels(self, image):
@@ -22,9 +21,9 @@ class YUVFormater:
                 self.v.m[i][j] = yuv_pixel.v
 
     def downsapling(self):
-        self.y_compressed = self.downsapling_matrix(self.y)
-        self.u_compressed = self.downsapling_matrix(self.u)
-        self.v_compressed = self.downsapling_matrix(self.v)
+        self.y_compressed_image = self.downsapling_matrix(self.y)
+        self.u_compressed_image = self.downsapling_matrix(self.u)
+        self.v_compressed_image = self.downsapling_matrix(self.v)
 
     def downsapling_matrix(self, matrix):
         compressed_image_width = matrix.width / 8

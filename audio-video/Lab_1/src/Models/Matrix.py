@@ -1,7 +1,7 @@
 class Matrix:
     def __init__(self, width = 0, height = 0):
-        self.width = width
-        self.height = height
+        self.width = int(width)
+        self.height = int(height)
         self.m = [ [None for j in range(self.width)] for i in range(self.height)]
 
     def print(self):

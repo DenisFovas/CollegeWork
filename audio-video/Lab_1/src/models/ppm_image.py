@@ -1,5 +1,5 @@
-from Models import PixelRGB
-from Models.Matrix import Matrix
+from .pixel_rgb import RGBPixel
+from .matrix import Matrix
 
 class PPMImage:
     def __init__(self, imageFile):
@@ -25,7 +25,7 @@ class PPMImage:
         index = 0
         for i in range(0, self.height):
             for j in range(0, self.width):
-                self.__imageMatrix.m[i][j] = PixelRGB.RGBPixel()
+                self.__imageMatrix.m[i][j] = RGBPixel()
                 self.__imageMatrix.m[i][j].red = int(raw_lines[index])
                 self.__imageMatrix.m[i][j].green = int(raw_lines[index+1])
                 self.__imageMatrix.m[i][j].blue = int(raw_lines[index+2])

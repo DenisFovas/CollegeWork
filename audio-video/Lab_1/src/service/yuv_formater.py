@@ -9,10 +9,10 @@ class YUVFormater:
         self.y = Matrix(width, height)
         self.u = Matrix(width, height)
         self.v = Matrix(width, height)
-        self.y_compressed_image = CompressedImage(self.y.width * self.y.height // 64)
-        self.u_compressed_image = CompressedImage(self.u.width * self.u.height // 64)
-        self.v_compressed_image = CompressedImage(self.v.width * self.v.height // 64)
-        
+        self.y_compressed_image = CompressedImage(self.y.width, self.y.height)
+        self.u_compressed_image = CompressedImage(self.u.width, self.u.height)
+        self.v_compressed_image = CompressedImage(self.v.width, self.v.height)
+
     def insertPixels(self, image):
         for i in range(0, self.y.height):
             for j in range(0, self.y.width):
@@ -34,12 +34,12 @@ class YUVFormater:
         compressed_image_width = matrix.width / 8
         compressed_image_height = matrix.height / 8
         pixel_block = PixelBlock(compressed_image_width, compressed_image_height)
-        a = CompressedImage(compressed_image_width * compressed_image_height // 64)
+        a = CompressedImage(compressed_image_width, compressed_image_height)
         temp = Matrix(8, 8)
         for i in range(0, matrix.height):
             for j in range(0, matrix.width):
-                pixel_block = a.get_block_at_position(i // 8, j // 8)
+                pixel_block = PixelBlock(i, j)
                 temp.m[i % 8][j % 8] = matrix.m[i][j]
-                # pixel_block.set_matrice(i // 2, j // 2, temp)
-                a.set_pixel_block(pixel_block, i//2, j //2)
+                pixel_block.block = temp
+                a.add_image_block(pixel_block)
         return a

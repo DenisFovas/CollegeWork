@@ -15,6 +15,4 @@ if __name__ == "__main__":
     print("Downsapling the matrices..." + str(datetime.datetime.now()))
     yuv_format.downsapling()
     print("Compressing the matrices..." + str(datetime.datetime.now()))
-    # for block in yuv_format.y_compressed_image.image_blocks:
-    #     block.print()
     print(len(yuv_format.y_compressed_image))

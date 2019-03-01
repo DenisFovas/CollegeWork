@@ -4,7 +4,7 @@ from .matrix import Matrix
 class PixelBlock:
 
     def __init__(self, x, y):
-        self.block = Matrix(8, 8) 
+        self.block = Matrix(8, 8)
         self.x = x
         self.y = y
 

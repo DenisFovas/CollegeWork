@@ -1,0 +1,4 @@
+% a. Write a predicate to determine the lowest common multiple of a list
+% formed from integer numbers.
+main() :-
+    lowCommMultipleList([2,2,2,2,2,2], X).

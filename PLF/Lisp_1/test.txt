@@ -1,0 +1,1 @@
+; se da o lista neliniara. sa se stearga cel mai mare diviz com al listei la orice nivel
